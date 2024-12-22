@@ -1,0 +1,351 @@
+        @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+        :root {
+        --main-color: #deab5f;
+        --primary-color: #edccb0;
+        }
+
+        /* Utility Styles */
+        button {
+        padding: 10px 30px;
+        background: var(--main-color);
+        border: none;
+        cursor: pointer;
+        }
+
+        * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        background: #dcae8d;
+        }
+
+        nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        font-family: sans-serif;
+        padding-top: 15px;
+        }
+
+        li {
+        display: inline;
+        list-style: none;
+        }
+
+        li a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 40px;
+        }
+
+        li a:hover {
+        border-bottom: 2px solid #96642a;
+        }
+
+        .header {
+            background: url("img/CoffeeArt.png");
+            background-position: center;
+            background-size: contain; /* Ensures the image maintains its proportions */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            height: 100vh;
+            max-height: 700px; /* Limits the height to avoid excessive scaling */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: var(--main-color, #754e29);
+            text-align: center;
+        }
+        
+        .main-heading {
+            position: absolute;
+            top: 23%; /* Adjusted for better placement */
+            font-size: 3.5rem; /* Adjust font size to scale well */
+            word-spacing: 10px;
+            color: #ffffff;
+            z-index: 2;
+            text-transform: uppercase;
+        }
+        
+        .primary-heading {
+            position: absolute;
+            bottom: 7%; /* Adjusted to align above the button */
+            font-size: 5.5rem; /* Adjust font size to scale well */
+            word-spacing: 10px;
+            color: #ffffff;
+            z-index: 2;
+            text-transform: uppercase;
+        }
+        
+        .main-btn {
+            position: absolute;
+            bottom: -3%; /* Adjust button placement */
+            padding: 10px 30px;
+            background: var(--main-color, #d2a679);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+            font-size: 1.2rem;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        
+        .main-btn:hover {
+            transform: scale(1.1);
+            background-color: #b4865a;
+        }
+        
+        
+        #our-story {
+        margin-top: 15%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        }
+
+        .img {
+        width: 400px;
+        height: 400px;
+        background: url(img/blackCoffee.png);
+        background-position: center;
+        background-size: cover;
+        }
+
+        .title-style {
+        display: flex;
+        align-items: center;
+        }
+
+        .title {
+        font-family: "Playfair Display SC", serif;
+        font-size: 4rem;
+        color: #fff;
+        transform: translateX(-100px);
+        }
+
+        .line {
+        width: 100px;
+        height: 2px;
+        background: #fff;
+        transform: translateX(-120px);
+        }
+
+        .section-content p {
+        max-width: 500px;
+        color: #fff;
+        font-family: sans-serif;
+        line-height: 20px;
+        margin: 20px 0;
+        }
+
+        .coffee-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10rem;
+        }
+
+        .content-section p {
+        max-width: 500px;
+        }
+
+        .img-container {
+        width: 500px;
+        height: 400px;
+        }
+
+        .img-2 {
+        width: 400px;
+        height: 400px;
+        }
+
+        .title-two {
+        font-size: 3rem;
+        color: #fff;
+        font-family: "Playfair Display SC", serif;
+        font-weight: normal;
+        }
+
+        .content-section p {
+        color: white;
+        margin-top: 20px;
+        font-family: sans-serif;
+        }
+
+        .products {
+        margin-top: 5rem;
+        }
+
+        .title-three {
+        font-size: 4rem;
+        margin-left: 10rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the cards */
+            gap: 20px; /* Add space between cards */
+            margin-top: 4rem;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #dcae8d, #deab5f); /* Subtle gradient */
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Depth with shadow */
+            border-radius: 15px; /* Smooth corners */
+            overflow: hidden; /* Ensures clean edges */
+            width: 320px; /* Modern card size */
+            padding: 20px; /* Add padding inside */
+            text-align: center; /* Center-align content */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+        }
+        
+        .card:hover {
+            transform: scale(1.05); /* Scale up slightly on hover */
+            box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+        }
+        
+        .card-img {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto; /* Center the image */
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%; /* Circular images for a modern look */
+        }
+        
+        .card-title h1 {
+            font-family: "Playfair Display SC", serif;
+            font-size: 1.8rem;
+            margin-top: 10px;
+            color: #fff;
+        }
+        
+        .card .items p {
+            color: #fff;
+            font-family: sans-serif;
+            margin: 10px 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .card button {
+            padding: 10px 20px;
+            background: #754e29; /* Contrasting button color */
+            color: #fff;
+            border: none;
+            border-radius: 25px; /* Rounded button */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .card button:hover {
+            background: #5e3f20; /* Slightly darker on hover */
+            transform: scale(1.1); /* Button hover effect */
+        }
+        
+        /* footer */
+        footer {
+            height: auto; /* Adjust height to content */
+            padding: 40px 20px; /* Add padding for spacing */
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start; /* Align items at the top */
+            justify-content: space-evenly; /* Distribute space evenly */
+            color: #fff;
+            font-family: sans-serif;
+            background-color: #754e29; /* Ensure contrast */
+        }
+        
+        footer .container {
+            margin: 20px;
+            max-width: 300px;
+            text-align: left; /* Align text for better readability */
+        }
+        
+        footer .heading-info {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        footer p {
+            line-height: 1.8; /* Improve readability */
+            font-size: 0.9rem;
+        }
+        
+        footer span {
+            color: var(--main-color);
+        }
+        
+        footer a {
+            color: var(--main-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: #b4865a; /* Slightly darker hover effect */
+        }
+        
+        .para {
+            text-align: center;
+            font-size: 0.85rem;
+            margin-top: 20px;
+        }
+        /* fotter end */
+
+        @media only screen and (max-width: 768px) {
+        .main-headings,
+        .primary-heading {
+            font-size: 2.5rem;
+        }
+
+        #our-story {
+            text-align: center;
+        }
+
+        #our-story .title {
+            transform: translateX(50px);
+        }
+
+        #our-story .line {
+            display: none;
+        }
+
+        .content-section {
+            text-align: center;
+        }
+
+        #our-story .img-container .img {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .coffee-container .img-container {
+            margin-top: 5rem;
+            width: 50%;
+        }
+
+        hr {
+            width: 400px;
+        }
+
+        .hr-two {
+            display: none;
+        }
+
+        .para {
+            margin-top: 10rem;
+        }
+        }
